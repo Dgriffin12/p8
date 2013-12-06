@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+html body {
+	color: lightblue;
+	font-size:115%;
+	background: url('Theatreimage.jpg');
+}
+
+p2 {
+	font-size:130%;
+}
+
+p3 {
+	color: lightgreen;
+}
+
+.navbar-text{
+	color: red;
+}
+table {
+	
+}
+
+.btn-custom {
+  background-color: hsl(145, 62%, 68%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cdf3dd", endColorstr="#7adfa4");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#cdf3dd), to(#7adfa4));
+  background-image: -moz-linear-gradient(top, #cdf3dd, #7adfa4);
+  background-image: -ms-linear-gradient(top, #cdf3dd, #7adfa4);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cdf3dd), color-stop(100%, #7adfa4));
+  background-image: -webkit-linear-gradient(top, #cdf3dd, #7adfa4);
+  background-image: -o-linear-gradient(top, #cdf3dd, #7adfa4);
+  background-image: linear-gradient(#cdf3dd, #7adfa4);
+  border-color: #7adfa4 #7adfa4 hsl(145, 62%, 63%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.btn-custom2 {
+  background-color: hsl(0, 75%, 38%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e44343", endColorstr="#a91818");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e44343), to(#a91818));
+  background-image: -moz-linear-gradient(top, #e44343, #a91818);
+  background-image: -ms-linear-gradient(top, #e44343, #a91818);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e44343), color-stop(100%, #a91818));
+  background-image: -webkit-linear-gradient(top, #e44343, #a91818);
+  background-image: -o-linear-gradient(top, #e44343, #a91818);
+  background-image: linear-gradient(#e44343, #a91818);
+  border-color: #a91818 #a91818 hsl(0, 75%, 33%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.btn-custom3 {
+  background-color: hsl(86, 90%, 50%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8fcce", endColorstr="#8ef20c");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#e8fcce), to(#8ef20c));
+  background-image: -moz-linear-gradient(top, #e8fcce, #8ef20c);
+  background-image: -ms-linear-gradient(top, #e8fcce, #8ef20c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8fcce), color-stop(100%, #8ef20c));
+  background-image: -webkit-linear-gradient(top, #e8fcce, #8ef20c);
+  background-image: -o-linear-gradient(top, #e8fcce, #8ef20c);
+  background-image: linear-gradient(#e8fcce, #8ef20c);
+  border-color: #8ef20c #8ef20c hsl(86, 90%, 40%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.66);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.fire {
+  background-color: hsl(24, 100%, 48%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fedac1", endColorstr="#f46100");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fedac1), to(#f46100));
+  background-image: -moz-linear-gradient(top, #fedac1, #f46100);
+  background-image: -ms-linear-gradient(top, #fedac1, #f46100);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fedac1), color-stop(100%, #f46100));
+  background-image: -webkit-linear-gradient(top, #fedac1, #f46100);
+  background-image: -o-linear-gradient(top, #fedac1, #f46100);
+  background-image: linear-gradient(#fedac1, #f46100);
+  border-color: #f46100 #f46100 hsl(24, 100%, 38%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.66);
+  -webkit-font-smoothing: antialiased;
+}

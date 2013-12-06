@@ -1,0 +1,22 @@
+
+<h1>Doug's Movie Review Site!</h1>
+<br>
+
+<div>
+	<% if flash[:alert] %>
+	<font color = "red"> <%= alert %> </font>
+	<% end %>
+</div>
+
+<p>You may search for a movie title below.</p>
+<br>
+<div>
+	<%= form_tag reviews_path, method: 'get' do %>
+	<%= label_tag(:search, "Movie Title: ") %>
+	<%= text_field_tag(:search, params[:search]) %>
+	<%= submit_tag "Lookup Movie Title", class: 'fire' %>
+	<% end %>
+</div>
+
+	<%= link_to "<button class = 'btn-custom3'>Show all reviews</button>".html_safe , reviews_path %>
+	<%= link_to "<button class = 'btn-custom2'>Create a new review</button>".html_safe , new_review_path %>

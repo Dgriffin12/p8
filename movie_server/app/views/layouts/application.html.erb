@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<head>
+  <title><%= content_for?(:title) ? yield(:title) : "Rails Bootstrap" %> </title>
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<p class="navbar-text pull-right">
+<% if user_signed_in? %>
+ <p3> Logged in as <strong><%= current_user.email %></strong>.</p3>
+  <button class = "btn-custom1"><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></button> |
+  <button class = "btn-custom1"><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></button>
+<% else %>
+  <button class ="btn-custom1"><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></button> |
+  <button class = "btn-custom1"><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></button>
+<% end %>
+
+<body>
+	<div class = "container" >
+	<div class = "row">
+		<div class = "span9">
+		   <%= yield %>
+		</div>
+		<div class = "span3">
+		</div>
+	</div>
+</body>
+</html>

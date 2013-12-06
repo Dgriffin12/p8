@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Movie:</strong>
+  <%= @review.movie %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= @review.title %>
+</p>
+<p>
+  <strong>Review:</strong>
+  <%= @review.body %>
+</p>
+<br>
+
+<button class = "btn-custom3"><%= link_to 'Edit', edit_review_path(@review) %></button> |
+<button class = "btn-custom3"><%= link_to 'Back', reviews_path %></button>
+
+<br>
+<br>
+<p2>Comments:</p2>
+<br>
+<% @review.comments.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+<% end %>
+<% if user_signed_in? %>
+ 
+<p2> Add a comment: </p2>
+<br>
+<br>
+<%= form_for([@review, @review.comments.build]) do |f| %>
+  <p>
+    <%= f.hidden_field :commenter, :value => current_user.email %>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Create Comment', class: 'fire' %>
+  </p>
+<% end %>
+ 
+<% end %>
